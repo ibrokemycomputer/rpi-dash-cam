@@ -1,0 +1,2 @@
+now=$(date +%m%d%Y-%H%M).h264
+raspivid -t 28800000 -w 960 -h 540 -o /mnt/DASH/nightman/$now -n -vs -br 55 -ex night &
